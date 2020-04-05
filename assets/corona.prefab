@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "star",
+    "_name": "corona",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -39,8 +39,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 60,
-      "height": 66
+      "width": 85,
+      "height": 94
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -92,7 +92,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "bfaa5185-ce5a-419e-a861-7873c6ea5308"
+      "__uuid__": "b157077f-ff38-47a6-8bc0-4ec6ced05003"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -116,7 +116,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "radious": 60,
+    "radious": 100,
     "_id": ""
   },
   {
@@ -127,7 +127,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "87Qw8Es6hLAa3zeLt9bu2x",
+    "fileId": "6fTGlLUQ5OMIE6d2azt5EL",
     "sync": false
   }
 ]

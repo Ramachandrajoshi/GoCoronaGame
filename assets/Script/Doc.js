@@ -16,6 +16,7 @@ cc.Class({
     getJumpAction:function(){
       var jumpUp = cc.moveBy(this.jumpDuration,cc.v2(0,this.jumpHeight)).easing(cc.easeCubicActionOut())
       var jumpDown = cc.moveBy(this.jumpDuration,cc.v2(0,-this.jumpHeight)).easing(cc.easeCubicActionIn())
+      
       var callback = cc.callFunc(this.playJumpSound,this)
       return cc.repeatForever(cc.sequence(jumpUp,jumpDown,callback))
     },
@@ -46,6 +47,13 @@ cc.Class({
     },
     // use this for initialization
     onLoad: function () {
+      this.isDestroyed = false
+      this.accelLeft = false;
+      this.accelRight = false;
+      this.xSpeed = 0;
+    },
+
+    onPlayClicked(){
       this.isDestroyed = false
       this.node.runAction(this.getJumpAction())
       this.accelLeft = false;

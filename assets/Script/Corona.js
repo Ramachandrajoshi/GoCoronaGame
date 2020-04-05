@@ -6,7 +6,7 @@ cc.Class({
        radious:100
     },
 
-    getBuddusDistence(){
+    getDocsDistence(){
       var player = this.game.player.getPosition()
      var dist= this.node.position.sub(player).mag()
      return dist
@@ -17,7 +17,7 @@ cc.Class({
     },
 
     update (dt) {
-        var rad = this.getBuddusDistence()
+        var rad = this.getDocsDistence()
         if( rad < this.radious){
             this.onPicked()
             return
